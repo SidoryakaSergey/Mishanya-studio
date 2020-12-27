@@ -1,0 +1,104 @@
+@font-face {
+  font-family: hanzipen;
+  src: url(../font/hanzipen-sc-regular.otf);
+}
+
+body {
+  color: #f9a337;
+  font-family: 'hanzipen', sans-serif;
+  font-size: 42px;
+}
+.wrapper {
+  background: black;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+}
+.wrapper__bg {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/monitor.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+.wrapper__content {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.cocial__img {
+  margin: 0 30px 5px 0;
+  width: 70px;
+}
+
+.cocial__img:hover {
+  transform: scale(1.2);
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10px 0;
+}
+
+.mobile__content {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 28px;
+  }
+
+  .wrapper__bg {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/telefon.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cocial__img {
+    margin: 5px 0 0px 10%;
+    width: 50px;
+  }
+
+  .mobile__content {
+    display: block;
+  }
+  .mobile__content h2 {
+    margin: 0;
+    padding: 0 0 2px 10%;
+    font-size: 32px;
+  }
+  h2:last-child {
+    padding: 0 0 2px 30%;
+  }
+}
+
+@media (max-height: 740px) {
+  .cocial__img {
+    margin: 2px 4px 0px 10%;
+    width: 40px;
+  }
+}
