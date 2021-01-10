@@ -77,23 +77,26 @@ body {
   background-size: cover;
 }
 
-.button_de:hover {
-  transform: scale(1.2);
-}
-
 .button_de {
   margin-right: 2px;
   width: 67px;
   height: 66px;
-
   background: url(../img/flag_de.png) no-repeat;
 }
 .button_ru {
   margin-right: 2px;
   width: 67px;
   height: 66px;
-
   background: url(../img/flag_ru.png) no-repeat;
+}
+.button_de:hover {
+  transform: scale(1.2);
+}
+.button_uk:hover {
+  transform: scale(1.2);
+}
+.button_ru:hover {
+  transform: scale(1.2);
 }
 
 .wrapper__content_pg11 {
