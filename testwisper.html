@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -12,9 +12,13 @@
   </head>
   <body>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
       .swiper-container {
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
         background-color: aquamarine;
       }
       .test {
@@ -48,8 +52,8 @@
       <div class="swiper-pagination"></div>
 
       <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
 
       <!-- If we need scrollbar -->
       <div class="swiper-scrollbar"></div>
