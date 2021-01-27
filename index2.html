@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style1.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="page_n1">
+              <div class="page_n1-content">
+                <h1
+                  id="welcom"
+                  data-i18n="Ласкаво просимо в студію Мішаня"
+                  data-i18n-de="Willkommen in 'Mishans' Studio"
+                  data-i18n-ru="Добро пожаловать в студию Мишаня"
+                ></h1>
+              </div>
+              <div id="change_len" class="change_len">
+                <div class="img_len" id="uk">
+                  <img src="./img/flag_ua.png" alt="ukr" />
+                </div>
+                <div class="img_len" id="ru">
+                  <img src="./img/flag_ru.png" alt="ukr" />
+                </div>
+                <div class="img_len" id="de">
+                  <img src="./img/flag_de.png" alt="ukr" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="page_n2">2</div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="page_n3">3</div>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script1.js"></script>
+  </body>
+</html>
