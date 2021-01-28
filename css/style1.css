@@ -63,11 +63,28 @@ body {
   /* background-attachment: fixed; */
   background-size: cover;
   background-color: #464646;
+  align-items: flex-end;
+
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .page_n3 {
   width: 100%;
   min-height: 100vh;
   background: url(../img/monhd_page3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-color: #464646;
+}
+
+.page_n11 {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/monhd_page11.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
@@ -95,3 +112,57 @@ body {
   justify-content: flex-end;
   margin-right: 5%;
 }
+
+.page_n2-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2% 2% 0;
+}
+.text_content-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text_content-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* page 11 */
+.wrapper__content_pg11 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.cocial__img {
+  margin: 0 30px 5px 0;
+  width: 70px;
+}
+
+.cocial__img:hover {
+  transform: scale(1.2);
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10px 0;
+}
+
+.mobile__content {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 28px;
+  }
