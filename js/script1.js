@@ -1,3 +1,9 @@
+let userLang = navigator.language || navigator.userLanguage;
+userLang = userLang.substr(0, 2).toLowerCase();
+document.documentElement.lang = userLang;
+
+console.log(userLang);
+
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   // direction: 'vertical',
