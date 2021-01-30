@@ -1,0 +1,228 @@
+@font-face {
+  font-family: hanzipen;
+  src: url(../font/hanzipen-sc-regular.otf);
+}
+
+body {
+  color: #f9a337;
+  font-family: 'hanzipen', sans-serif;
+  font-size: 28px;
+  text-shadow: 2px 2px 6px #000000;
+}
+
+.page_n1 {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/monhd_page1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-color: #464646;
+}
+.page_n2 {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/monhd_page2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-color: #464646;
+}
+.page_n3 {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/monhd_page3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-color: #464646;
+}
+.page_n11 {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/monhd_page11.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-color: #464646;
+}
+.wrapper__content {
+  /* width: 100%;
+  min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper__content-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.wrapper__content-lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.button_uk {
+  margin-right: 2px;
+  width: 67px;
+  height: 66px;
+  background: url(../img/flag_ua.png) no-repeat;
+  background-size: cover;
+}
+
+.button_de {
+  margin-right: 2px;
+  width: 67px;
+  height: 66px;
+  background: url(../img/flag_de.png) no-repeat;
+}
+.button_ru {
+  margin-right: 2px;
+  width: 67px;
+  height: 66px;
+  background: url(../img/flag_ru.png) no-repeat;
+}
+.button_de:hover {
+  transform: scale(1.2);
+}
+.button_uk:hover {
+  transform: scale(1.2);
+}
+.button_ru:hover {
+  transform: scale(1.2);
+}
+
+.wrapper__content_pg11 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.cocial__img {
+  margin: 0 30px 5px 0;
+  width: 70px;
+}
+
+.cocial__img:hover {
+  transform: scale(1.2);
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10px 0;
+}
+
+.mobile__content {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 28px;
+  }
+
+  .page_n1 {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/tele_page1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-color: #464646;
+  }
+  .page_n2 {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/tele_page2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-color: #464646;
+  }
+  .page_n3 {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/tele_page3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-color: #464646;
+  }
+
+  .page_n11 {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/tele_page11.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-color: #464646;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cocial__img {
+    margin: 5px 0 0px 10%;
+    width: 50px;
+  }
+
+  .mobile__content {
+    display: block;
+  }
+  .mobile__content h2 {
+    margin: 0;
+    padding: 0 0 2px 10%;
+    font-size: 32px;
+  }
+  h2:last-child {
+    padding: 0 0 2px 30%;
+  }
+}
+
+@media (max-height: 740px) {
+  .cocial__img {
+    margin: 2px 4px 0px 10%;
+    width: 40px;
+  }
+}
+
+/* /////////////////////// */
+.wrapper {
+  min-height: 100%;
+}
+.page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+}

@@ -1,80 +1,120 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-XE77LL2LHS"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-XE77LL2LHS');
-    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta property="og:title" content="Мы снимаем видео, Записываем звук!" />
-    <meta property="og:site_name" content="Студия 'Мишаня'" />
-
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="/img/camera.jpg" />
-
-    <title>Студия "Мишаня" Мы снимаем видео, Записываем звук!</title>
-    <meta name="description" content="" />
-    <meta
-      name="keywords"
-      content="Студия, Мишаня, видеозапись, видео, звукозапись"
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="wrapper">
-      <main class="page">
-        <div class="page__wrapper">
-          <!-- Слайд 1 -->
-          <div class="page__screen screen">
+    <div class="wrap">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
             <div class="page_n1">
-              <div class="wrapper__content">
-                <div class="wrapper__content-text">
-                  <h1>Добро пожаловать в студию “Мишаня”</h1>
-                </div>
-                <div class="wrapper__content-lang">
-                  <div class="button_uk">
-                    <a
-                      href="https://developer.mozilla.org/ru/docs/Web/CSS/cursor"
-                    ></a>
-                  </div>
-                  <div class="button_de"></div>
-                  <div class="button_ru"></div>
-                </div>
+              <div class="page_n1-content">
+                <h1
+                  id="welcom"
+                  data-i18n='Ласкаво просимо в студію "Мішаня"'
+                  data-i18n-de='Willkommen in "Mishans" Studio'
+                  data-i18n-ru='Добро пожаловать в студию "Мишаня"'
+                ></h1>
               </div>
-            </div>
-          </div>
-          <!-- Слайд 2 -->
-          <div class="page__screen screen">
-            <div class="page_n2">
-              <div class="wrapper__content">
-                <h1>Рад вас видеть!</h1>
-              </div>
-            </div>
-          </div>
-          <!-- Слайд 3 -->
-          <div class="page__screen screen">
-            <div class="page_n3">
-              <div class="wrapper__content">
-                <h1>Свадебное фото</h1>
+              <div id="change_len" class="change_len">
+                <div class="img_len" id="uk">
+                  <img src="./img/flag_ua.png" alt="ukr" />
+                </div>
+                <div class="img_len" id="ru">
+                  <img src="./img/flag_ru.png" alt="ukr" />
+                </div>
+                <div class="img_len" id="de">
+                  <img src="./img/flag_de.png" alt="ukr" />
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Слайд 11 -->
-          <div class="page__screen screen">
+          <div class="swiper-slide">
+            <div class="page_n2">
+              <div class="page_n2-content">
+                <div class="text_content-center">
+                  <p
+                    id="welcom"
+                    data-i18n="Я люблю справу, якою займаюся!"
+                    data-i18n-de="Ich liebe, was ich tue!"
+                    data-i18n-ru="Я люблю дело, которым занимаюсь!"
+                  ></p>
+                  <p
+                    id="welcom"
+                    data-i18n="Тому завжди із задоволенням,"
+                    data-i18n-de="Deshalb gehe ich immer mit Vergnügen,"
+                    data-i18n-ru="Поэтому всегда с удовольствием,"
+                  ></p>
+                  <p
+                    id="welcom"
+                    data-i18n="увагою і відповідальністю"
+                    data-i18n-de="Aufmerksamkeit und Verantwortung"
+                    data-i18n-ru="вниманием и ответственностью"
+                  ></p>
+                  <p
+                    id="welcom"
+                    data-i18n="підходжу до Ваших закаказам."
+                    data-i18n-de="auf Ihre Bestellungen zu."
+                    data-i18n-ru="подхожу к Вашим закаказам."
+                  ></p>
+                </div>
+                <div class="text_content-end">
+                  <p
+                    id="welcom"
+                    data-i18n="Михайло Черніков."
+                    data-i18n-de="Mikhail Chernikov."
+                    data-i18n-ru="Михаил Черников."
+                  ></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- **  Page <3> ** -->
+          <div class="swiper-slide">
+            <div class="page_n3">3</div>
+          </div>
+          <!-- **  Page <4> ** -->
+          <div class="swiper-slide">
+            <div class="page_n3">4</div>
+          </div>
+          <!-- **  Page <5> ** -->
+          <div class="swiper-slide">
+            <div class="page_n3">5</div>
+          </div>
+          <!-- **  Page <6> ** -->
+          <div class="swiper-slide">
+            <div class="page_n3">6</div>
+          </div>
+          <!-- **  Page <7> ** -->
+          <div class="swiper-slide">
+            <div class="page_n3">7</div>
+          </div>
+          <!-- **  Page <8> ** -->
+          <div class="swiper-slide">
+            <div class="page_n3">8</div>
+          </div>
+          <!-- **  Page <9> ** -->
+          <div class="swiper-slide">
+            <div class="page_n3">9</div>
+          </div>
+          <!-- **  Page <10> ** -->
+          <div class="swiper-slide">
+            <div class="page_n3">10</div>
+          </div>
+          <!-- **  Page <11> ** -->
+          <div class="swiper-slide">
             <div class="page_n11">
               <div class="wrapper__content_pg11">
                 <div class="social">
@@ -123,11 +163,22 @@
               </div>
             </div>
           </div>
-          <!-- Конец слайда -->
+
+          ...
         </div>
-      </main>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/jscript.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
