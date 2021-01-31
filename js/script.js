@@ -37,6 +37,16 @@ var mySwiper = new Swiper('.swiper-container', {
   },
   watchOverflow: true,
   speed: 800,
+  init: false,
+  on: {
+    init: function () {
+      menuSlider();
+    },
+    slideChange: function () {
+      menuSliderRemove();
+      menuLinks[mySwiper.realIndex].classList.add('_active');
+    },
+  },
 });
 
 const uk_len = document.getElementById('uk');
@@ -53,3 +63,29 @@ ru_len.addEventListener('click', (e) => {
 de_len.addEventListener('click', (e) => {
   document.documentElement.lang = 'de';
 });
+
+let menuLinks = document.querySelectorAll('.menu__link');
+
+function menuSlider() {
+  if (menuLinks.length > 0) {
+    menuLinks[mySwiper.realIndex].classList.add('_active');
+    for (let index = 0; index < menuLinks.length; index++) {
+      const menuLink = menuLinks[index];
+      menuLink.addEventListener('click', (e) => {
+        menuSliderRemove();
+        mySwiper.slideTo(index, 800);
+        menuLink.classList.add('_active');
+        e.preventDefault();
+      });
+    }
+  }
+}
+
+function menuSliderRemove() {
+  let menuLinkActive = document.querySelector('.menu__link._active');
+  if (menuLinkActive) {
+    menuLinkActive.classList.remove('_active');
+  }
+}
+
+mySwiper.init();
