@@ -14,6 +14,7 @@ var mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
   },
   direction: 'vertical',
+  slideToClickedSlide: false,
   // Navigation arrows
   //   navigation: {
   //     nextEl: '.swiper-button-next',
@@ -46,6 +47,29 @@ var mySwiper = new Swiper('.swiper-container', {
       menuSliderRemove();
       menuLinks[mySwiper.realIndex].classList.add('_active');
     },
+  },
+});
+
+const swiper_n2 = new Swiper('.swiper-container_n2', {
+  // Optional parameters
+  // direction: 'vertical',
+  // loop: true,
+
+  slideToClickedSlide: false,
+  // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar_n2',
   },
 });
 
