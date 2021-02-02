@@ -255,7 +255,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+}
+.list_video {
+  width: 80%;
+}
+.video-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
 }
 
-.list_video {
+.video {
+  padding: 0 50px;
+}
+
+.right10deg {
+  transform: rotate(-5deg);
+}
+.left10deg {
+  transform: rotate(5deg);
 }
