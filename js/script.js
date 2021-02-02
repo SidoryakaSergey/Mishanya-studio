@@ -2,6 +2,20 @@ let userLang = navigator.language || navigator.userLanguage;
 userLang = userLang.substr(0, 2).toLowerCase();
 document.documentElement.lang = userLang;
 
+const uk_len = document.getElementById('uk');
+const ru_len = document.getElementById('ru');
+const de_len = document.getElementById('de');
+
+uk_len.addEventListener('click', (e) => {
+  document.documentElement.lang = 'uk';
+});
+ru_len.addEventListener('click', (e) => {
+  document.documentElement.lang = 'ru';
+});
+de_len.addEventListener('click', (e) => {
+  document.documentElement.lang = 'de';
+});
+
 console.log(userLang);
 
 var mySwiper = new Swiper('.swiper-container', {
@@ -50,44 +64,6 @@ var mySwiper = new Swiper('.swiper-container', {
   },
 });
 
-const swiper_n2 = new Swiper('.swiper-container_n2', {
-  // Optional parameters
-  // direction: 'vertical',
-  // loop: true,
-
-  slideToClickedSlide: false,
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar_n2',
-  },
-});
-
-const uk_len = document.getElementById('uk');
-const ru_len = document.getElementById('ru');
-const de_len = document.getElementById('de');
-// console.log(change_len);
-
-uk_len.addEventListener('click', (e) => {
-  document.documentElement.lang = 'uk';
-});
-ru_len.addEventListener('click', (e) => {
-  document.documentElement.lang = 'ru';
-});
-de_len.addEventListener('click', (e) => {
-  document.documentElement.lang = 'de';
-});
-
 let menuLinks = document.querySelectorAll('.menu__link');
 
 function menuSlider() {
@@ -102,6 +78,24 @@ function menuSlider() {
         e.preventDefault();
       });
     }
+  }
+}
+
+let content__imgs = document.querySelectorAll('.content__img');
+
+if (content__imgs) {
+  for (let i = 0; i < content__imgs.length; i++) {
+    const content__img = content__imgs[i];
+    content__img.addEventListener('click', (e) => {
+      switch (e.target.id) {
+        case 'wedding':
+          console.log('wedding');
+          break;
+        case 'family':
+          console.log('family');
+          break;
+      }
+    });
   }
 }
 

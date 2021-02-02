@@ -166,13 +166,21 @@ body {
 .content__img {
   width: 793px;
   height: 379px;
+  cursor: pointer;
+}
 
+.page_n3-content .content__img {
   background: url(../img/temp/wedding.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   background-size: cover;
-  /* padding: 10px; */
+}
+
+.page_n4-content .content__img {
+  background: url(../img/temp/family.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content__text {
