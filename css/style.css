@@ -258,7 +258,7 @@ body {
   align-items: center;
 }
 .list_video {
-  width: 80%;
+  width: 60%;
 }
 .video-row {
   display: flex;
@@ -270,9 +270,22 @@ body {
   padding: 0 50px;
 }
 
+.video-youtube {
+  /* width: 40%;
+  height: 40%;
+  overflow: hidden; */
+}
+
 .right10deg {
   transform: rotate(-5deg);
 }
 .left10deg {
   transform: rotate(5deg);
+}
+
+#back_to {
+  text-decoration: none;
+  color: #f9a337;
+  padding-bottom: 20px;
+  cursor: pointer;
 }

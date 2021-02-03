@@ -5,6 +5,8 @@ document.documentElement.lang = userLang;
 const uk_len = document.getElementById('uk');
 const ru_len = document.getElementById('ru');
 const de_len = document.getElementById('de');
+let prevHtml;
+let bg_active_page;
 
 uk_len.addEventListener('click', (e) => {
   document.documentElement.lang = 'uk';
@@ -101,89 +103,82 @@ function menuSliderRemove() {
 
 mySwiper.init();
 
-let prevHtml;
-
 function loadListVideo(name) {
   prevHtml = document.querySelector(`#${name}_content`);
   window.prevHtml = prevHtml;
   prevHtml.remove();
-  const bg = document.querySelector('#page_n3');
-
-  bg.style.backgroundImage = 'url(../img/monhd_page3-next.jpg)';
+  bg_active_page = document.querySelector(`#page_n3_${name}`);
+  bg_active_page.style.backgroundImage = 'url(../img/monhd_page3-next.jpg)';
   const listVideoHtml = `
   <div class="page_n-list_video">
-  <div class="list_video">
-    <div class="video-row">
-      <div class="video right10deg">
-        <div class="video-youtube">
-          <iframe
-            width="420"
-            height="236"
-            src="https://www.youtube.com/embed/UuZqORoZSl4?controls=0"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="video-name">
-          <h3>Незабываемый день</h3>
-        </div>
-      </div>
-      <div class="video left10deg">
-        <div class="video-youtube">
-          <iframe
-            width="420"
-            height="236"
-            src="https://www.youtube.com/embed/UuZqORoZSl4?controls=0"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="video-name">
-          <h3>Незабываемый день</h3>
-        </div>
-      </div>
-    </div>
-    <!-- row 2 -->
-    <div class="video-row">
-      <div class="video left10deg">
-        <div class="video-youtube">
-          <iframe
-            width="420"
-            height="236"
-            src="https://www.youtube.com/embed/UuZqORoZSl4?controls=0"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="video-name">
-          <h3>Незабываемый день</h3>
-        </div>
-      </div>
-      <div class="video right10deg">
-        <div class="video-youtube">
-          <iframe
-            width="420"
-            height="236"
-            src="https://www.youtube.com/embed/UuZqORoZSl4?controls=0"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="video-name">
-          <h3>Незабываемый день</h3>
-        </div>
-      </div>
-    </div>
+          <p id="back_to" href=""> ВЕРНУТЬСЯ НАЗАД </p>
+          <div class="list_video">
+            <div class="video-row">
+              <div class="video right10deg">
+                <div class="video-youtube">
+                  <a
+                    href="https://www.youtube.com/watch?v=UuZqORoZSl4"
+                    target="_blank"
+                    ><img src="./img/temp/list_video.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="video-name">
+                  <h3>Незабываемый день</h3>
+                </div>
+              </div>
+              <div class="video left10deg">
+                <div class="video-youtube">
+                  <a
+                    href="https://www.youtube.com/watch?v=UuZqORoZSl4"
+                    target="_blank"
+                    ><img src="./img/temp/list_video.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="video-name">
+                  <h3>Незабываемый день</h3>
+                </div>
+              </div>
+            </div>
+            <!-- row 2 -->
+            <div class="video-row">
+              <div class="video left10deg">
+                <div class="video-youtube">
+                  <a
+                    href="https://www.youtube.com/watch?v=UuZqORoZSl4"
+                    target="_blank"
+                    ><img src="./img/temp/list_video.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="video-name">
+                  <h3>Незабываемый день</h3>
+                </div>
+              </div>
+              <div class="video right10deg">
+                <div class="video-youtube">
+                  <a
+                    href="https://www.youtube.com/watch?v=UuZqORoZSl4"
+                    target="_blank"
+                    ><img src="./img/temp/list_video.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="video-name">
+                  <h3>Незабываемый день</h3>
+                </div>
+              </div>
+            </div>
 
-    <!-- end-row -->
-  </div>
-</div>
-
+            <!-- end-row -->
+          </div>
+        </div>
   `;
-  bg.innerHTML = listVideoHtml;
-  console.log(bg);
+  bg_active_page.innerHTML = listVideoHtml;
+}
+
+const button_back_to = document.querySelector('#back_to');
+
+if (button_back_to) {
+  button_back_to.addEventListener('click', (e) => {
+    console.log(e);
+    e.preventDefault;
+  });
 }
