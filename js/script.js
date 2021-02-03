@@ -7,6 +7,7 @@ const ru_len = document.getElementById('ru');
 const de_len = document.getElementById('de');
 let prevHtml;
 let bg_active_page;
+let button_back_to;
 
 uk_len.addEventListener('click', (e) => {
   document.documentElement.lang = 'uk';
@@ -172,9 +173,20 @@ function loadListVideo(name) {
         </div>
   `;
   bg_active_page.innerHTML = listVideoHtml;
-}
 
-const button_back_to = document.querySelector('#back_to');
+  button_back_to = document.querySelector('#back_to');
+  if (button_back_to) {
+    button_back_to.addEventListener('click', (e) => {
+      console.log(e);
+
+      bg_active_page.style.backgroundImage = 'url(../img/monhd_page3.jpg)';
+      const listVideoHtml = document.querySelector('.page_n-list_video');
+      console.log('List Video - ', listVideoHtml);
+      listVideoHtml.remove();
+      bg_active_page.append(prevHtml);
+    });
+  }
+}
 
 if (button_back_to) {
   button_back_to.addEventListener('click', (e) => {
