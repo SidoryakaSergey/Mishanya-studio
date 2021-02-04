@@ -22,26 +22,12 @@ de_len.addEventListener('click', (e) => {
 console.log(userLang);
 
 let mySwiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  // direction: 'vertical',
-  // loop: true,
-
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
   direction: 'vertical',
   slideToClickedSlide: false,
-  // Navigation arrows
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev',
-  //   },
   effect: 'fade',
-  //   fadeEffect: {
-  //     crossFade: true,
-  //   },
-  // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
   },
@@ -67,6 +53,7 @@ let mySwiper = new Swiper('.swiper-container', {
   },
 });
 
+//****   MENU *** */
 let menuLinks = document.querySelectorAll('.menu__link');
 
 function menuSlider() {
@@ -84,6 +71,13 @@ function menuSlider() {
   }
 }
 
+function menuSliderRemove() {
+  let menuLinkActive = document.querySelector('.menu__link._active');
+  if (menuLinkActive) {
+    menuLinkActive.classList.remove('_active');
+  }
+}
+/**  **********  */
 let content__imgs = document.querySelectorAll('.content__img');
 
 if (content__imgs) {
@@ -95,102 +89,16 @@ if (content__imgs) {
   }
 }
 
-function menuSliderRemove() {
-  let menuLinkActive = document.querySelector('.menu__link._active');
-  if (menuLinkActive) {
-    menuLinkActive.classList.remove('_active');
-  }
-}
-
-mySwiper.init();
-
 function loadListVideo(name) {
-  prevHtml = document.querySelector(`#${name}_content`);
-  window.prevHtml = prevHtml;
-  prevHtml.remove();
-  bg_active_page = document.querySelector(`#page_n3_${name}`);
-  bg_active_page.style.backgroundImage = 'url(../img/monhd_page3-next.jpg)';
-  const listVideoHtml = `
-  <div class="page_n-list_video">
-          <p id="back_to" href=""> ВЕРНУТЬСЯ НАЗАД </p>
-          <div class="list_video">
-            <div class="video-row">
-              <div class="video right10deg">
-                <div class="video-youtube">
-                  <a
-                    href="https://www.youtube.com/watch?v=UuZqORoZSl4"
-                    target="_blank"
-                    ><img src="./img/temp/list_video.jpg" alt=""
-                  /></a>
-                </div>
-                <div class="video-name">
-                  <h3>Незабываемый день</h3>
-                </div>
-              </div>
-              <div class="video left10deg">
-                <div class="video-youtube">
-                  <a
-                    href="https://www.youtube.com/watch?v=UuZqORoZSl4"
-                    target="_blank"
-                    ><img src="./img/temp/list_video.jpg" alt=""
-                  /></a>
-                </div>
-                <div class="video-name">
-                  <h3>Незабываемый день</h3>
-                </div>
-              </div>
-            </div>
-            <!-- row 2 -->
-            <div class="video-row">
-              <div class="video left10deg">
-                <div class="video-youtube">
-                  <a
-                    href="https://www.youtube.com/watch?v=UuZqORoZSl4"
-                    target="_blank"
-                    ><img src="./img/temp/list_video.jpg" alt=""
-                  /></a>
-                </div>
-                <div class="video-name">
-                  <h3>Незабываемый день</h3>
-                </div>
-              </div>
-              <div class="video right10deg">
-                <div class="video-youtube">
-                  <a
-                    href="https://www.youtube.com/watch?v=UuZqORoZSl4"
-                    target="_blank"
-                    ><img src="./img/temp/list_video.jpg" alt=""
-                  /></a>
-                </div>
-                <div class="video-name">
-                  <h3>Незабываемый день</h3>
-                </div>
-              </div>
-            </div>
-
-            <!-- end-row -->
-          </div>
-        </div>
-  `;
-  bg_active_page.innerHTML = listVideoHtml;
-
-  button_back_to = document.querySelector('#back_to');
+  prevHtml = document.querySelector(`#page_n3_${name}`);
+  prevHtml.style.zIndex = '1';
+  button_back_to = document.querySelector(`#back_to_${name}`);
   if (button_back_to) {
     button_back_to.addEventListener('click', (e) => {
-      console.log(e);
-
-      bg_active_page.style.backgroundImage = 'url(../img/monhd_page3.jpg)';
-      const listVideoHtml = document.querySelector('.page_n-list_video');
-      console.log('List Video - ', listVideoHtml);
-      listVideoHtml.remove();
-      bg_active_page.append(prevHtml);
+      prevHtml.style.zIndex = '60';
     });
   }
 }
 
-if (button_back_to) {
-  button_back_to.addEventListener('click', (e) => {
-    console.log(e);
-    e.preventDefault;
-  });
-}
+/* init Swiper */
+mySwiper.init();
