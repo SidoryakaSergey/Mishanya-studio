@@ -21,6 +21,16 @@ de_len.addEventListener('click', (e) => {
 
 console.log(userLang);
 
+const change_menu = document.querySelector('.burger__menu');
+const header__menu = document.querySelector('.header__menu');
+console.log(header__menu);
+
+// console.log(change_menu);
+change_menu.addEventListener('click', () => {
+  change_menu.classList.toggle('change_menu');
+  header__menu.classList.toggle('header__menu-show');
+});
+
 const black_effect = document.querySelector('.black_effect');
 
 let mySwiper = new Swiper('.swiper-container', {
