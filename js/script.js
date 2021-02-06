@@ -21,6 +21,8 @@ de_len.addEventListener('click', (e) => {
 
 console.log(userLang);
 
+const black_effect = document.querySelector('.black_effect');
+
 let mySwiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
@@ -49,6 +51,10 @@ let mySwiper = new Swiper('.swiper-container', {
     slideChange: function () {
       menuSliderRemove();
       menuLinks[mySwiper.realIndex].classList.add('_active');
+      black_effect.classList.add('black_effect_visible');
+      setTimeout(() => {
+        black_effect.classList.remove('black_effect_visible');
+      }, 700);
     },
   },
 });

@@ -32,9 +32,28 @@ body {
   min-height: 100vh;
 }
 
+.black_effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 99999;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.black_effect_visible {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
 .header {
   position: absolute;
-  z-index: 50;
+  z-index: 100;
   top: 0;
   left: 50px;
   padding: 10px;
