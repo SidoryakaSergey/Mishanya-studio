@@ -192,22 +192,6 @@ body {
   padding: 10px;
 }
 
-/*  ***  youtube SWIPER  ****  */
-
-.slider_n2 {
-  width: 100%;
-}
-
-.youtube_wraper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.name_youtube {
-  font-size: 2em;
-}
-
 /* page         11 */
 .wrapper__content_pg11 {
   min-height: 100vh;
@@ -272,7 +256,7 @@ body {
 .video-row {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 40px;
+  padding-bottom: 2%;
 }
 
 .video {
@@ -280,10 +264,11 @@ body {
 }
 
 .video-youtube {
-  transform: scale(0.8);
-  /* width: 40%;
-  height: 40%;
-  overflow: hidden; */
+}
+
+.youtube-img {
+  object-fit: cover;
+  width: calc(100vw / 6);
 }
 
 .video-name {
