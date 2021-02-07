@@ -1,8 +1,102 @@
-* {
-  padding: 0;
-  margin: 0;
-}
+/* Reset CSS */
 
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+}
 /* украинский (язык по умолчанию)*/
 [data-i18n]::before {
   content: attr(data-i18n);
@@ -189,6 +283,16 @@ body {
   justify-content: center;
 }
 
+.welcom_header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.welcom_text {
+  display: flex;
+  justify-content: center;
+}
 .change_len {
   display: flex;
   justify-content: flex-end;
@@ -279,12 +383,6 @@ body {
   display: none;
 }
 
-@media (max-width: 768px) {
-  body {
-    font-size: 28px;
-  }
-}
-
 /* * *  Page N NEXT * * */
 .page_n-list_video {
   position: absolute;
@@ -343,4 +441,60 @@ body {
   padding-bottom: 20px;
   cursor: pointer;
   font-size: 2em;
+}
+
+/**** ********************  */
+#welcom_telephone {
+  display: none;
+}
+.foter_n1 {
+  display: none;
+}
+/**** ***** TELEFON  *****  */
+/**** ********************  */
+@media (max-width: 768px) {
+  #welcom_monitor {
+    display: none;
+  }
+  #welcom_telephone {
+    display: block;
+  }
+  .foter_n1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .page_n1 {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/tele_page1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-color: #464646;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .page_n1-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+  }
+
+  .welcom_header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .change_len {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  /*  END max-width 768px   */
 }
