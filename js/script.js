@@ -23,7 +23,6 @@ console.log(userLang);
 
 const change_menu = document.querySelector('.burger__menu');
 const header__menu = document.querySelector('.header__menu');
-console.log(header__menu);
 
 // console.log(change_menu);
 change_menu.addEventListener('click', () => {
@@ -61,10 +60,10 @@ let mySwiper = new Swiper('.swiper-container', {
     slideChange: function () {
       menuSliderRemove();
       menuLinks[mySwiper.realIndex].classList.add('_active');
-      black_effect.classList.add('black_effect_visible');
-      setTimeout(() => {
-        black_effect.classList.remove('black_effect_visible');
-      }, 700);
+      // black_effect.classList.add('black_effect_visible');
+      // setTimeout(() => {
+      //   black_effect.classList.remove('black_effect_visible');
+      // }, 700);
     },
   },
 });
