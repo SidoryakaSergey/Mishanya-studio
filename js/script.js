@@ -92,7 +92,7 @@ function menuSliderRemove() {
     menuLinkActive.classList.remove('_active');
   }
 }
-/**  **********  */
+/**  **** IMG ******  */
 let content__imgs = document.querySelectorAll('.content__img');
 
 if (content__imgs) {
