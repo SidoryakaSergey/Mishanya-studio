@@ -622,7 +622,8 @@ body {
 
   .list_video {
     width: 90%;
-    padding-bottom: 5%;
+
+    margin-bottom: calc(100vh / 10);
   }
   .video-row {
     display: flex;
