@@ -260,7 +260,7 @@ body {
 .page_n11 {
   width: 100%;
   min-height: 100vh;
-  background: url(../img/monhd_page11.jpg);
+  background: url(../img/monhd_page11_with_bear.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
@@ -371,8 +371,18 @@ body {
 .wrapper__content_pg11 {
   min-height: 100vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-direction: column;
+}
+.header_page11 {
+  display: flex;
+}
+
+.slogan {
+  padding-left: 20%;
+  font-size: 6vw;
+  line-height: 90%;
+  margin-top: 2%;
 }
 
 .social {
@@ -381,8 +391,8 @@ body {
 }
 
 .cocial__img {
-  margin: 0 30px 5px 0;
-  width: 70px;
+  margin: 0 30px 10% 0;
+  width: calc(100vw / 25);
 }
 
 .cocial__img:hover {
@@ -462,6 +472,10 @@ body {
   display: none;
 }
 .foter_n1 {
+  display: none;
+}
+
+.bear_page11 {
   display: none;
 }
 /**** ***** TELEFON  *****  */
@@ -655,7 +669,74 @@ body {
     font-size: 6vw;
   }
 
-  /**** ********************  */
+  /**** page 11 ***  */
+  .page_n11 {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/tele_page11.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-color: #464646;
+  }
+
+  .wrapper__content_pg11 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .header_page11 {
+    display: none;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 7%;
+  }
+
+  .cocial__img {
+    width: calc(100vw / 6);
+  }
+
+  .social a {
+    display: block;
+    text-decoration: none;
+    width: calc(100vw / 6);
+    height: 100%;
+  }
+
+  .cocial__img:hover {
+    transform: scale(1.2);
+  }
+
+  .footer_page11 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .bear_page11 {
+    display: block;
+    margin-right: 10%;
+  }
+  .bear_page11 img {
+    object-fit: cover;
+    width: calc(100vw / 1.6);
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+  }
+
+  .mobile__content {
+    display: block;
+    text-align: center;
+  }
 
   /*  END max-width 768px   */
 }
