@@ -310,7 +310,7 @@ body {
 .page_n2-content {
   display: flex;
   flex-direction: column;
-  padding: 0 2% 2% 0;
+  margin-bottom: calc(100vh / 10);
 }
 .text_content-center {
   display: flex;

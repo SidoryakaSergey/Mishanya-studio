@@ -80,6 +80,8 @@ function menuSlider() {
         menuSliderRemove();
         mySwiper.slideTo(index, 800);
         menuLink.classList.add('_active');
+        change_menu.classList.toggle('change_menu');
+        header__menu.classList.toggle('header__menu-show');
         e.preventDefault();
       });
     }
