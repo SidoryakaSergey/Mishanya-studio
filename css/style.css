@@ -707,6 +707,8 @@ body {
     text-decoration: none;
     width: calc(100vw / 6);
     height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2px;
   }
 
   .cocial__img:hover {
