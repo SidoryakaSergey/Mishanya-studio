@@ -334,7 +334,13 @@ body {
 /* page         3  */
 
 .page_n3-content,
-.page_n4-content {
+.page_n4-content,
+.page_n5-content,
+.page_n6-content,
+.page_n7-content,
+.page_n8-content,
+.page_n9-content,
+.page_n10-content {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -342,25 +348,66 @@ body {
   align-items: center;
 }
 
-.content__img {
-  width: calc(100vw / 2.5);
-  height: calc(100vh / 2.5);
-  cursor: pointer;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
 .page_n3-content .content__img {
-  background: url(../img/temp/wedding.jpg);
+  background: url(../img/youtube_img/page3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .page_n4-content .content__img {
-  background: url(../img/temp/family.jpg);
+  background: url(../img/youtube_img/page4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.page_n5-content .content__img {
+  background: url(../img/youtube_img/page5.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page_n6-content .content__img {
+  background: url(../img/youtube_img/page6.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page_n7-content .content__img {
+  background: url(../img/youtube_img/page7.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page_n8-content .content__img {
+  background: url(../img/youtube_img/page8.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page_n9-content .content__img {
+  background: url(../img/youtube_img/page9.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page_n10-content .content__img {
+  background: url(../img/youtube_img/page10.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content__img {
+  width: calc(100vw / 2.5);
+  height: calc(100vh / 2.5);
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .content__text {
@@ -439,6 +486,7 @@ body {
 }
 
 .video {
+  width: calc(100vw / 4.5);
   padding: 0;
 }
 
