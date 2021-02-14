@@ -644,7 +644,7 @@ body {
   .content__img {
     /* width: 793px; */
     /* height: 379px; */
-    margin-top: 40%;
+    margin-top: 30%;
     width: calc(100vw / 1.4);
     height: calc(100vh / 6);
     cursor: pointer;
@@ -652,6 +652,7 @@ body {
   }
 
   .content__text {
+    text-align: center;
     font-size: 12vw;
     padding: 10% 0 0 0;
   }
@@ -696,6 +697,7 @@ body {
 
   .video {
     padding: 0;
+    width: calc(100vw / 2.4);
   }
 
   .youtube-img {
