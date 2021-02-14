@@ -644,7 +644,7 @@ body {
   .content__img {
     /* width: 793px; */
     /* height: 379px; */
-    margin-top: 30%;
+    margin-bottom: 10%;
     width: calc(100vw / 1.4);
     height: calc(100vh / 6);
     cursor: pointer;
@@ -655,6 +655,7 @@ body {
     text-align: center;
     font-size: 12vw;
     padding: 10% 0 0 0;
+    margin-bottom: 20%;
   }
 
   /* * *  Page N NEXT * * */
@@ -789,6 +790,18 @@ body {
   .mobile__content {
     display: block;
     text-align: center;
+  }
+
+  .page_n3-content,
+  .page_n4-content,
+  .page_n5-content,
+  .page_n6-content,
+  .page_n7-content,
+  .page_n8-content,
+  .page_n9-content,
+  .page_n10-content {
+    justify-content: flex-end;
+    align-items: center;
   }
 
   /*  END max-width 768px   */
