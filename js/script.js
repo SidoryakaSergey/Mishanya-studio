@@ -106,6 +106,18 @@ if (content__imgs) {
   }
 }
 
+let content__texts = document.querySelectorAll('.content__text');
+
+if (content__texts) {
+  for (let y = 0; y < content__texts.length; y++) {
+    const content__text = content__texts[y];
+    content__text.addEventListener('click', (el) => {
+      console.log('target =', el.target.id.slice(5));
+      loadListVideo(el.target.id.slice(5));
+    });
+  }
+}
+
 function loadListVideo(name) {
   prevHtml = document.querySelector(`#page_n3_${name}`);
   prevHtml.style.zIndex = '1';

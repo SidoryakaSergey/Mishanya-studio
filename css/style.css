@@ -200,6 +200,10 @@ body {
   text-decoration: none;
 }
 
+.menu__link:hover {
+  color: #bc6900;
+}
+
 ._active {
   color: rgb(221, 208, 29);
 }
@@ -412,6 +416,11 @@ body {
 
 .content__text {
   font-size: 6vw;
+  cursor: pointer;
+}
+
+.content__text:hover {
+  color: #bc6900;
 }
 
 /* page         11 */
@@ -513,6 +522,10 @@ body {
   padding-bottom: 2%;
   cursor: pointer;
   font-size: 2vw;
+}
+
+.back_to:hover {
+  color: #bc6900;
 }
 
 /**** ********************  */
