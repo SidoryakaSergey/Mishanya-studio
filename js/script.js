@@ -5,6 +5,7 @@ document.documentElement.lang = userLang;
 const uk_len = document.getElementById('uk');
 const ru_len = document.getElementById('ru');
 const de_len = document.getElementById('de');
+const en_len = document.getElementById('en');
 let prevHtml;
 let bg_active_page;
 let button_back_to;
@@ -17,6 +18,9 @@ ru_len.addEventListener('click', (e) => {
 });
 de_len.addEventListener('click', (e) => {
   document.documentElement.lang = 'de';
+});
+en_len.addEventListener('click', (e) => {
+  document.documentElement.lang = 'en';
 });
 
 console.log(userLang);

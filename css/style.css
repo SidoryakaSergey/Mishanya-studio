@@ -109,6 +109,10 @@ html {
 [data-i18n-ru]:lang(ru)::before {
   content: attr(data-i18n-ru);
 }
+/* английский*/
+[data-i18n-en]:lang(en)::before {
+  content: attr(data-i18n-en);
+}
 
 @font-face {
   font-family: hanzipen;
@@ -475,7 +479,6 @@ body {
   background: url(../img/monhd_page3-next.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   background-size: cover;
   background-color: #464646;
   display: flex;
@@ -517,15 +520,24 @@ body {
 }
 
 .back_to {
-  text-decoration: none;
-  color: #f9a337;
-  padding-bottom: 2%;
+  background: url(../img/back.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 67px;
+  height: 67px;
+
+  /* width: calc(100vw / 10); */
   cursor: pointer;
-  font-size: 2vw;
 }
 
 .back_to:hover {
-  color: #bc6900;
+  background: url(../img/back_hover.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 67px;
+  height: 67px;
 }
 
 /**** ********************  */
