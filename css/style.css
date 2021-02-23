@@ -276,6 +276,64 @@ body {
   background-color: #464646;
 }
 
+.page_n12_reviews {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/reviews/page_reviews_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-color: #464646;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* .page_n13_reviews {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/reviews/page_reviews_2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-color: #464646;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+} */
+
+/* REVIEWS */
+a {
+  text-decoration: none;
+  color: #f9a337;
+}
+
+.wrapper__content_reviews {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2%;
+  align-items: flex-end;
+}
+
+.dergavin {
+  margin-bottom: 4%;
+}
+.reviews_name {
+  font-size: 3vw;
+  cursor: pointer;
+}
+
+.reviews_name:hover {
+  color: #bc6900;
+}
+
+/* page 1 */
+
 #welcom_monitor {
   font-size: 300%;
 }
