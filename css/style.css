@@ -609,6 +609,8 @@ a {
   flex: 1 1 auto;
   width: 40%;
   margin-bottom: 2%;
+  object-fit: contain;
+  /* overflow: hidden; */
 }
 
 .video-youtube {
