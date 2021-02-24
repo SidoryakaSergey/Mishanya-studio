@@ -209,7 +209,7 @@ body {
 }
 
 ._active {
-  color: rgb(221, 208, 29);
+  color: #f9a337;
 }
 
 .swiper-container {
@@ -306,14 +306,43 @@ body {
   align-items: center;
 }
 
+.page_n14_reviews {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/reviews/page_reviews_3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-color: #464646;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.page_n15_reviews {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/reviews/page_reviews_4.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-color: #464646;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 /* REVIEWS */
 a {
   text-decoration: none;
   color: #f9a337;
 }
 
-.wrapper__content_reviews_page12,
-.wrapper__content_reviews_page13 {
+.wrapper__content_reviews {
   width: 60%;
   display: flex;
   justify-content: space-around;
@@ -408,8 +437,7 @@ a {
 .page_n8-content,
 .page_n9-content,
 .page_n10-content,
-.page_n12-content,
-.page_n13-content {
+.page_review-content {
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -601,6 +629,10 @@ a {
 
 .video-name {
   text-align: center;
+}
+.video-name:hover {
+  color: #bc6900;
+  cursor: pointer;
 }
 
 .right10deg {
