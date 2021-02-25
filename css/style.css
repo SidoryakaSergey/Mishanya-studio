@@ -359,11 +359,14 @@ a {
 .wrapper__content_reviews {
   width: 60%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 2%;
   align-items: flex-end;
 }
 
+.button_play {
+  display: none;
+}
 .dergavin {
   margin-bottom: 4%;
 }
@@ -819,7 +822,7 @@ a {
     text-align: center;
     font-size: 12vw;
     padding: 10% 0 0 0;
-    margin-bottom: 20%;
+    margin-bottom: 30%;
     line-height: 0.9;
   }
 
@@ -972,6 +975,114 @@ a {
   .page_n10-content {
     justify-content: flex-end;
     align-items: center;
+  }
+
+  .page_n12_reviews {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/reviews/page_reviews_1_telephone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .page_n13_reviews {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/reviews/page_reviews_2_telephone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .page_n14_reviews {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/reviews/page_reviews_3_telephone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .page_n15_reviews {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/reviews/page_reviews_4_telephone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .page_n16_reviews {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/reviews/page_reviews_5_telephone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  /* REVIEWS */
+  a {
+    text-decoration: none;
+    color: #f9a337;
+  }
+
+  .wrapper__content_reviews {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 20%;
+    align-items: center;
+  }
+
+  .button_play {
+    width: 100%;
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+  }
+  .button_play a {
+    display: block;
+    text-align: center;
+  }
+  .button_play a img {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .dergavin {
+    margin-bottom: 4%;
+  }
+  .reviews_name {
+    text-align: center;
+    font-size: 10vw;
+    cursor: pointer;
   }
 
   /*  END max-width 768px   */
