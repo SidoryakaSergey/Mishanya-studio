@@ -696,6 +696,10 @@ a {
 /**** ***** TELEFON  *****  */
 /**** ********************  */
 @media (max-width: 768px) {
+  .menu__link {
+    font-size: 0.8em;
+  }
+
   #welcom_monitor {
     display: none;
   }
