@@ -662,7 +662,7 @@ a {
 .video-name {
   text-align: center;
 }
-.video-name:hover {
+.video-name a:hover {
   color: #bc6900;
   cursor: pointer;
 }
