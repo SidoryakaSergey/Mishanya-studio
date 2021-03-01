@@ -354,6 +354,21 @@ a.menu__link {
   align-items: center;
 }
 
+.page_n17_reviews {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/reviews/page_reviews_6.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-color: #464646;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 /* REVIEWS */
 a {
   text-decoration: none;
@@ -1064,6 +1079,20 @@ a {
     width: 100%;
     min-height: 100vh;
     background: url(../img/reviews/page_reviews_5_telephone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .page_n17_reviews {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/reviews/page_reviews_6_telephone.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
