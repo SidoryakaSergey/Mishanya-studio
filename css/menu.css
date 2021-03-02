@@ -1,10 +1,11 @@
 /* Стили меню */
 #nav {
+  color: #000;
   display: inline-block;
   width: 100%;
   margin: 0px auto;
   padding: 0;
-  background: #335599 url(../images/bg.png) repeat-x 0 -110px;
+  background: #335599;
 
   border-radius: 10px; /*немного css3*/
   -moz-border-radius: 10px;
