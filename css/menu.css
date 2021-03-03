@@ -6,13 +6,6 @@
   margin: 0px auto;
   padding: 0;
   background: #335599;
-
-  border-radius: 10px; /*немного css3*/
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 #nav li {
   margin: 10px;
@@ -36,14 +29,9 @@
 /* sВыбранный пункт меню */
 #nav .current a,
 #nav li:hover > a {
-  background: #7788aa url(../images/bg.png) repeat-x 0 -20px;
+  background: #7788aa;
   color: #000;
   border-top: 1px solid #f8f8f8;
-
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7); /*немного css3*/
-  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
-  text-shadow: 0 2px 2px rgba(255, 255, 255, 0.7);
 }
 
 /* Подуровень */
@@ -54,7 +42,7 @@
   color: #000;
 }
 #nav ul li a:hover {
-  background: #335599 url(../images/bg.png) repeat-x 0 -100px;
+  background: #335599;
   color: #fff;
 
   border-radius: 10px; /*немного css3*/
