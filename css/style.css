@@ -133,16 +133,26 @@ body {
 .header {
   position: absolute;
   z-index: 100;
-  top: 0;
+  top: 5%;
   left: 50px;
   padding: 10px;
   background-color: #2c2a2a8e;
+  border-radius: 40px;
 }
 
 /* Burger Menu */
 .burger__menu {
   display: inline-block;
   cursor: pointer;
+}
+
+.burger__menu img {
+  /* width: calc(100vw / 30); */
+  width: 64px;
+}
+
+.burger__menu img:hover {
+  transform: scale(1.2);
 }
 
 .burger__menu-bar1,
