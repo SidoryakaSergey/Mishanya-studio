@@ -30,11 +30,11 @@ const header__menu = document.querySelector('.header__menu');
 
 // console.log(change_menu);
 change_menu.addEventListener('click', () => {
-  change_menu.classList.toggle('change_menu');
+  // change_menu.classList.toggle('change_menu');
   header__menu.classList.toggle('header__menu-show');
 });
 
-const black_effect = document.querySelector('.black_effect');
+// const black_effect = document.querySelector('.black_effect');
 
 let mySwiper = new Swiper('.swiper-container', {
   pagination: {
@@ -62,8 +62,8 @@ let mySwiper = new Swiper('.swiper-container', {
       menuSlider();
     },
     slideChange: function () {
-      menuSliderRemove();
-      menuLinks[mySwiper.realIndex].classList.add('_active');
+      // menuSliderRemove();
+      // menuLinks[mySwiper.realIndex].classList.add('_active');
     },
   },
 });
@@ -73,13 +73,13 @@ let menuLinks = document.querySelectorAll('.menu__link');
 
 function menuSlider() {
   if (menuLinks.length > 0) {
-    menuLinks[mySwiper.realIndex].classList.add('_active');
+    // menuLinks[mySwiper.realIndex].classList.add('_active');
     for (let index = 0; index < menuLinks.length; index++) {
       const menuLink = menuLinks[index];
       menuLink.addEventListener('click', (e) => {
-        menuSliderRemove();
-        mySwiper.slideTo(index, 800);
-        menuLink.classList.add('_active');
+        // menuSliderRemove();
+        mySwiper.slideTo(menuLink.dataset.page, 800);
+        // menuLink.classList.add('_active');
         change_menu.classList.toggle('change_menu');
         header__menu.classList.toggle('header__menu-show');
         e.preventDefault();

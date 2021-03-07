@@ -180,6 +180,10 @@ body {
 }
 /*  end burger menu */
 
+ul,
+li {
+  list-style-type: none;
+}
 .header__menu {
   display: none;
   /* display: flex; */
@@ -197,6 +201,7 @@ a.menu__link {
 .menu__link {
   color: aliceblue;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .menu__link:hover {
