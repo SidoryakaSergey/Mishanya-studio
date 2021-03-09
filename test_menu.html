@@ -7,24 +7,27 @@
     <title>Document</title>
   </head>
   <body>
+    <style>
+      .myAudio {
+        background: red;
+        color: blueviolet;
+        width: 200px;
+      }
+      audio {
+        width: 400px;
+        height: 20px;
+        color: #000;
+        /* background-color: brown; */
+        border: black 2px solid;
+        border-radius: 5px;
+      }
+    </style>
     <div class="wrap">
-      <ul id="nav">
-        <li>
-          <a href="#" class="menu__link">Головна</a>
-          <ul>
-            <li>пукт 1</li>
-            <li>пукт 2</li>
-            <li>
-              пукт 3
-              <ul>
-                <li>подпунк 1</li>
-                <li>подпунк 2</li>
-                <li>подпунк 3</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <audio
+        clas="myAudio"
+        controls
+        src="./audio/Daughters for a wedding.wav"
+      ></audio>
     </div>
   </body>
 </html>
