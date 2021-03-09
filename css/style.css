@@ -264,6 +264,21 @@ a.menu__link {
   background-color: #464646;
   z-index: 50;
 }
+/* Audio */
+.page_n4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/monhd_page4.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-color: #464646;
+  z-index: 50;
+}
 
 .page_n11 {
   width: 100%;
@@ -469,6 +484,7 @@ a {
 .page_n8-content,
 .page_n9-content,
 .page_n10-content,
+.page_n10-audio,
 .page_review-content {
   min-height: 100vh;
   width: 100%;
@@ -610,6 +626,28 @@ a {
 
   z-index: 30;
 }
+
+.page_n-list_audio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/monhd_page4-next.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  z-index: 30;
+}
+
+/*  Audio page */
+
 .list_video {
   width: 60%;
   height: 100%;
