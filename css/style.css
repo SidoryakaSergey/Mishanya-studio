@@ -611,7 +611,7 @@ a {
 .slogan {
   padding-top: 10%;
   /* padding-left: 20%; */
-  font-size: calc(100vh * 0.06);
+  font-size: calc(100vw * 0.04);
   line-height: 98%;
   width: 30%;
   flex: 1 1 auto;
@@ -762,7 +762,7 @@ audio {
 }
 
 .video-row .video2 {
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 .video-youtube {
