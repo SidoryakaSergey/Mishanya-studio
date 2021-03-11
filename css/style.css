@@ -718,8 +718,6 @@ audio {
   text-align: center;
   padding: 2% 5%;
 }
-.audio-name {
-}
 
 .list_audio-footer {
   text-align: center;
@@ -831,6 +829,10 @@ a {
 }
 
 .bear_page11 {
+  display: none;
+}
+
+.list_audio-header_mobile {
   display: none;
 }
 /**** ***** TELEFON  *****  */
@@ -1305,13 +1307,12 @@ a {
   /*  Audio page */
 
   audio {
-    height: 40px;
+    height: 20px;
   }
 
   .list_audio {
-    width: 68%;
+    width: 95%;
     height: 100%;
-    background-color: #706e6b5d;
   }
 
   .list_audio-array {
@@ -1323,7 +1324,23 @@ a {
 
   .audio-box {
     flex: 1 1 auto;
-    width: 45%;
+    width: 95%;
+  }
+  .audio-name {
+    font-size: calc(100vh * 0.02);
+  }
+
+  .list_audio-header {
+    display: none;
+  }
+
+  .list_audio-footer {
+    display: none;
+  }
+  .list_audio-header_mobile {
+    display: block;
+    text-align: center;
+    font-size: calc(100vh * 0.035);
   }
 
   /*  END max-width 768px   */
