@@ -1320,6 +1320,7 @@ a {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: calc(100vh - 100vh * 0.93);
   }
 
   .audio-box {
@@ -1328,6 +1329,7 @@ a {
   }
   .audio-name {
     font-size: calc(100vh * 0.02);
+    line-height: 92%;
   }
 
   .list_audio-header {
@@ -1341,6 +1343,7 @@ a {
     display: block;
     text-align: center;
     font-size: calc(100vh * 0.035);
+    line-height: 95%;
   }
 
   /*  END max-width 768px   */
