@@ -978,7 +978,7 @@ a {
     text-align: center;
     font-size: 12vw;
     padding: 10% 0 0 0;
-    /* margin-bottom: calc(100vh * 0.1); */
+    margin-bottom: calc(100vh * 0.08);
     line-height: 0.9;
   }
 
