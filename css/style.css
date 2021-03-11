@@ -972,10 +972,13 @@ a {
   }
 
   .content__text {
+    display: flex;
+    justify-content: flex-end;
+    min-height: calc(100vh * 0.2);
     text-align: center;
     font-size: 12vw;
     padding: 10% 0 0 0;
-    margin-bottom: 30%;
+    /* margin-bottom: calc(100vh * 0.1); */
     line-height: 0.9;
   }
 
