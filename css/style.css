@@ -97,6 +97,7 @@ html {
   height: 100%;
   -webkit-text-size-adjust: none;
 }
+
 /* украинский (язык по умолчанию)*/
 [data-i18n]::before {
   content: attr(data-i18n);
@@ -712,7 +713,7 @@ audio {
 }
 .audio-name {
   line-height: 1.2;
-  margin-bottom: 7px;
+  /* margin-bottom: 7px; */
 }
 
 .audio-box {
@@ -1357,7 +1358,7 @@ a {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: calc(100vh - 100vh * 0.94);
+    margin-bottom: calc(100vh - 100vh * 0.93);
   }
   /*  END max-width 768px   */
 }
