@@ -699,6 +699,7 @@ audio {
 .list_audio {
   width: 68%;
   height: 100%;
+  font-size: calc(100vw * 0.017);
   /* background-color: #706e6b5d; */
 }
 
@@ -708,6 +709,10 @@ audio {
   display: flex;
   flex-wrap: wrap;
 }
+.audio-name {
+  line-height: 1.2;
+  margin-bottom: 7px;
+}
 
 .audio-box {
   flex: 1 1 auto;
@@ -716,7 +721,7 @@ audio {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2% 5%;
+  padding: 1% 5%;
 }
 
 .list_audio-footer {
