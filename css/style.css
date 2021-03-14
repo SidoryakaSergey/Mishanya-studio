@@ -700,6 +700,7 @@ audio {
   width: 68%;
   height: 100%;
   font-size: calc(100vw * 0.017);
+  margin-bottom: 20px;
   /* background-color: #706e6b5d; */
 }
 
@@ -838,6 +839,10 @@ a {
 }
 
 .list_audio-header_mobile {
+  display: none;
+}
+
+.list_audio-array_mobile {
   display: none;
 }
 /**** ***** TELEFON  *****  */
@@ -1321,11 +1326,7 @@ a {
   }
 
   .list_audio-array {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: calc(100vh - 100vh * 0.92);
+    display: none;
   }
 
   .audio-box {
@@ -1334,7 +1335,7 @@ a {
   }
   .audio-name {
     font-size: calc(100vh * 0.02);
-    line-height: 92%;
+    line-height: 1.1;
   }
 
   .list_audio-header {
@@ -1350,6 +1351,13 @@ a {
     font-size: calc(100vh * 0.035);
     line-height: 95%;
   }
-
+  .list_audio-array_mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: calc(100vh - 100vh * 0.94);
+  }
   /*  END max-width 768px   */
 }
