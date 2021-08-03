@@ -98,6 +98,11 @@ html {
   -webkit-text-size-adjust: none;
 }
 
+@font-face {
+  font-family: hanzipen;
+  src: url(../font/hanzipen-sc-regular.otf);
+}
+
 /* украинский (язык по умолчанию)*/
 [data-i18n]::before {
   content: attr(data-i18n);
@@ -113,11 +118,6 @@ html {
 /* английский*/
 [data-i18n-en]:lang(en)::before {
   content: attr(data-i18n-en);
-}
-
-@font-face {
-  font-family: hanzipen;
-  src: url(../font/hanzipen-sc-regular.otf);
 }
 
 body {
